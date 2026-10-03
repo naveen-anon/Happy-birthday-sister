@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1c0210">
+<meta name="description" content="A birthday film for the best big sister.">
+<title>Happy Birthday, Big Sister</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;1,500&family=Hind:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true"><i></i><i></i><i></i></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="prog" aria-hidden="true"></div>
+<div class="lb t" aria-hidden="true"></div><div class="lb b" aria-hidden="true"></div>
+
+<div id="intro">
+  <p class="eyebrow">A little something, just for you</p>
+  <button class="glass big" id="begin">Tap to begin</button>
+</div>
+
+<header class="hero">
+  <p class="eyebrow" data-s>Happy Birthday</p>
+  <h1 id="name"></h1>
+  <p class="tag" id="tag" data-s></p>
+  <span class="scroll" data-s>scroll</span>
+</header>
+
+<main class="wrap">
+  <section>
+    <p class="chap" data-r>Chapter I</p>
+    <h2 data-r>What I Never Say Out Loud</h2>
+    <div class="grid" id="wishes" data-r></div>
+  </section>
+
+  <section>
+    <p class="chap" data-r>Chapter II</p>
+    <h2 data-r>By the Numbers</h2>
+    <div class="grid stats" id="stats" data-r></div>
+  </section>
+
+  <section>
+    <p class="chap" data-r>Chapter III</p>
+    <h2 data-r>The Story So Far</h2>
+    <ol class="tl" id="mem"></ol>
+  </section>
+
+  <section class="cake" id="cake">
+    <p class="chap" data-r>Chapter IV</p>
+    <h2 data-r>Close Your Eyes. Make a Wish.</h2>
+    <svg viewBox="0 0 240 230" role="img" aria-label="Birthday cake" data-r>
+      <ellipse cx="120" cy="212" rx="105" ry="12" fill="#2a0614"/>
+      <rect x="30" y="140" width="180" height="68" rx="14" fill="#7a1840"/>
+      <rect x="55" y="92" width="130" height="58" rx="12" fill="#ff6fae"/>
+      <path d="M55 108q10 18 20 0t20 0 20 0 20 0 20 0 15 0v-10h-115z" fill="#ffe3ef"/>
+      <path d="M30 156q12 20 24 0t24 0 24 0 24 0 24 0 24 0 12 0v-8H30z" fill="#f6cf7a"/>
+      <g transform="translate(90 0)"><rect x="-4" y="58" width="8" height="34" rx="3" fill="#f6cf7a"/><path class="fl" d="M0 36c9 10 9 18 0 22-9-4-9-12 0-22z"/></g>
+      <g transform="translate(120 0)"><rect x="-4" y="52" width="8" height="40" rx="3" fill="#ffc2dc"/><path class="fl" d="M0 30c9 10 9 18 0 22-9-4-9-12 0-22z"/></g>
+      <g transform="translate(150 0)"><rect x="-4" y="58" width="8" height="34" rx="3" fill="#f6cf7a"/><path class="fl" d="M0 36c9 10 9 18 0 22-9-4-9-12 0-22z"/></g>
+    </svg>
+    <button class="glass big" id="blow">Blow out the candles</button>
+    <p class="after" id="after"></p>
+  </section>
+
+  <section>
+    <p class="chap" data-r>Chapter V</p>
+    <article class="glass letter" data-r>
+      <h2 id="lh">A Letter to My Sister</h2>
+      <div id="letter"></div>
+      <p class="sign" id="sign"></p>
+    </article>
+  </section>
+
+  <section class="gift">
+    <p class="chap" data-r>One Last Thing</p>
+    <svg viewBox="0 0 200 190" role="img" aria-label="Gift box" data-r id="gbox">
+      <g id="lid"><rect x="20" y="46" width="160" height="34" rx="8" fill="#ff6fae"/><rect x="92" y="46" width="16" height="34" fill="#f6cf7a"/>
+      <path d="M100 46c-30-34-56-10-30 4zM100 46c30-34 56-10 30 4z" fill="#f6cf7a"/></g>
+      <rect x="30" y="80" width="140" height="96" rx="8" fill="#7a1840"/><rect x="92" y="80" width="16" height="96" fill="#f6cf7a"/>
+    </svg>
+    <button class="glass big" id="open">Open your gift</button>
+    <div class="glass coupon" id="coupon"><b id="cb"></b><p id="cp"></p></div>
+  </section>
+</main>
+
+<footer>
+  <button class="alt" id="mel">Play the melody again</button>
+  <p class="dev glass">Designed &amp; developed by <b>Naveen Khatri</b></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
